@@ -9,7 +9,7 @@
 
 ## Game Start:
 
-- Ask who is going to play the game (there must be at least three participants - including yourself).
+- Ask who is going to play the game (there must be at one other participant - including yourself).
 - Always make sure you have the name of each participant.
 - Agree who is going to be the responder.
 - Either you or one of the other speakers can be the responder.

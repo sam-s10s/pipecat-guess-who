@@ -36,7 +36,7 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
 # Configure API keys
-cp .env-example .env
+cp dot-env.template .env
 # Edit .env with your API keys
 
 # Run the demo
@@ -56,10 +56,29 @@ OPENAI_API_KEY=your-openai-api-key-here
 ## How to Play
 
 1. Start the application with `python agent.py`
-2. Think of a character from the classic Guess Who? game
-3. The AI will ask yes/no questions about your character
-4. Answer with "yes" or "no"
-5. The AI will try to guess your character!
+2. Go to `http://localhost:7860/` in your browser
+3. Think of a character from the classic Guess Who? game
+4. The AI will ask yes/no questions about your character
+5. Answer with "yes" or "no"
+6. The AI will try to guess your character!
+
+## Run using Daily
+
+If you are unable to use WebRTC directly (depending on your system's security), you can use the Daily platform instead. You will need to have a [Daily account](https://daily.co) and create a room that the agent can join.
+
+Add the following to your `.env` file:
+
+```env
+DAILY_API_KEY=your-daily-api-key-here
+DAILY_SAMPLE_ROOM_URL=your-daily-room-url-here
+```
+
+Now run the agent with the `--transport daily` flag:
+
+```shell
+# Run using Daily
+python agent.py --transport daily
+```
 
 ## Technical Details
 
