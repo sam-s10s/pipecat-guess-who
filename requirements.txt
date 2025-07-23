@@ -1,0 +1,10 @@
+# standard libs
+fastapi[all]~=0.116.1
+uvicorn~=0.35.0
+python-dotenv~=1.1.1
+
+# pipecat modules
+pipecat-ai[webrtc,daily,elevenlabs,openai,silero,speechmatics]~=0.0.74
+
+# pipecat WebRTC
+pipecat-ai-small-webrtc-prebuilt~=0.7.0
