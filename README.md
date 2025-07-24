@@ -43,6 +43,19 @@ cp dot-env.template .env
 python agent.py
 ```
 
+### Running on an ESP32
+
+As with most audio agents created using Pipecat, it is possible to use an ESP32 device as the audio interface. For further information on this, please see the [Pipecat Docs](https://github.com/pipecat-ai/pipecat-esp32).
+
+Change the host IP address (`0.0.0.0`) to the IP address of the machine you run this command on. You will also need to make sure both your machine and the ESP32 device are on the same network and the ESP32 device has been flashed with the custom firmware.
+
+**NOTE:** By default, the ESP32 will mute the microphone while the agent is speaking. This means that it is not possible to interrupt the agent. We will be releasing an update to this in the future.
+
+```shell
+# Start the agent for ESP32 access
+python agent.py --host 0.0.0.0 --esp32
+```
+
 ## Configuration
 
 Edit the `.env` file with your API credentials:
