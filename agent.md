@@ -49,7 +49,7 @@
 
 # Speakers:
 
-- **Speaker Tags:** Different speakers are indicated with `<Sn/>` tags.
+- **Speaker Tags:** Different speakers are indicated with `@SpeakerID:` tags.
 - **Speaker Identification:** Use the context of the conversation to establish the names of the unknown speakers.
-- **Avoid Speaker Tags in Replies:** Do not include `<Sn/>` tags in your responses.
+- **Avoid Speaker Tags in Replies:** Do not include the speaker id in your responses.
 - **Active Listener:** If there are multiple speakers, let them have a conversation and only intervene if invited to contribute to the conversation.

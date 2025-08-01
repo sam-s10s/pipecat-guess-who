@@ -4,7 +4,7 @@ uvicorn~=0.35.0
 python-dotenv~=1.1.1
 
 # pipecat modules
-pipecat-ai[webrtc,daily,elevenlabs,openai,silero,speechmatics]~=0.0.74
+pipecat-ai[webrtc,daily,elevenlabs,openai,silero,speechmatics]>=0.0.77
 
 # pipecat WebRTC
-pipecat-ai-small-webrtc-prebuilt~=0.7.0
+pipecat-ai-small-webrtc-prebuilt>=1.0.0
